@@ -3,7 +3,10 @@ package io.louisgevers.expensetracker.fragments;
 
 import android.os.Bundle;
 
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
+import androidx.navigation.Navigation;
 
 import android.view.LayoutInflater;
 import android.view.View;
@@ -29,4 +32,10 @@ public class ProjectFragment extends Fragment {
         return inflater.inflate(R.layout.fragment_project, container, false);
     }
 
+    @Override
+    public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
+        super.onViewCreated(view, savedInstanceState);
+        view.findViewById(R.id.addTransactionButton).setOnClickListener(
+                v -> Navigation.findNavController(view).navigate(R.id.action_projectFragment_to_addTransactionFragment));
+    }
 }
