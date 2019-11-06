@@ -39,5 +39,7 @@ public class ProjectFragment extends Fragment {
                 v -> Navigation.findNavController(view).navigate(R.id.action_projectFragment_to_addTransactionFragment));
         view.findViewById(R.id.transactionDetailsButton).setOnClickListener(
                 v -> Navigation.findNavController(view).navigate(R.id.action_projectFragment_to_detailsFragment));
+        view.findViewById(R.id.summaryButton).setOnClickListener(
+                v -> Navigation.findNavController(view).navigate(R.id.action_projectFragment_to_summaryFragment));
     }
 }

@@ -42,6 +42,9 @@
         <action
             android:id="@+id/action_projectFragment_to_detailsFragment"
             app:destination="@id/detailsFragment" />
+        <action
+            android:id="@+id/action_projectFragment_to_summaryFragment"
+            app:destination="@id/summaryFragment" />
     </fragment>
     <fragment
         android:id="@+id/addTransactionFragment"
@@ -53,4 +56,9 @@
         android:name="io.louisgevers.expensetracker.fragments.DetailsFragment"
         android:label="fragment_details"
         tools:layout="@layout/fragment_details" />
+    <fragment
+        android:id="@+id/summaryFragment"
+        android:name="io.louisgevers.expensetracker.fragments.SummaryFragment"
+        android:label="fragment_summary"
+        tools:layout="@layout/fragment_summary" />
 </navigation>
