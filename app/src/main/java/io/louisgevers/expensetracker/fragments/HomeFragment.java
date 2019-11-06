@@ -36,9 +36,9 @@ public class HomeFragment extends Fragment {
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
-        Button newProjectBtn = view.findViewById(R.id.newProjectButton);
-        newProjectBtn.setOnClickListener(v -> {
-            Navigation.findNavController(view).navigate(R.id.action_navigation_home_to_newProjectFragment);
-        });
+        view.findViewById(R.id.newProjectButton).setOnClickListener(
+                v -> Navigation.findNavController(view).navigate(R.id.action_navigation_home_to_newProjectFragment));
+        view.findViewById(R.id.existingProjectButton).setOnClickListener(
+                v -> Navigation.findNavController(view).navigate(R.id.action_navigation_home_to_projectFragment));
     }
 }
