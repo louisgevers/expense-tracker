@@ -3,45 +3,71 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/nav_graph"
-    app:startDestination="@id/projectsOverviewFragment">
-
+    app:startDestination="@id/navigation_home">
     <fragment
-        android:id="@+id/projectsOverviewFragment"
-        android:name="io.louisgevers.expensetracker.fragments.ProjectsOverviewFragment"
-        android:label="fragment_projects_overview"
-        tools:layout="@layout/fragment_projects_overview" >
+        android:id="@+id/navigation_home"
+        android:name="io.louisgevers.expensetracker.fragments.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" >
         <action
-            android:id="@+id/action_projectsOverviewFragment_to_projectFragment"
+            android:id="@+id/action_navigation_home_to_newProjectFragment"
+            app:destination="@id/newProjectFragment" />
+        <action
+            android:id="@+id/action_navigation_home_to_projectFragment"
             app:destination="@id/projectFragment" />
     </fragment>
+    <fragment
+        android:id="@+id/navigation_user"
+        android:name="io.louisgevers.expensetracker.fragments.UserFragment"
+        android:label="fragment_user"
+        tools:layout="@layout/fragment_user" />
+    <fragment
+        android:id="@+id/navigation_search"
+        android:name="io.louisgevers.expensetracker.fragments.SearchFragment"
+        android:label="fragment_search"
+        tools:layout="@layout/fragment_search" />
+    <fragment
+        android:id="@+id/newProjectFragment"
+        android:name="io.louisgevers.expensetracker.fragments.NewProjectFragment"
+        android:label="fragment_new_project"
+        tools:layout="@layout/fragment_new_project" />
     <fragment
         android:id="@+id/projectFragment"
         android:name="io.louisgevers.expensetracker.fragments.ProjectFragment"
         android:label="fragment_project"
         tools:layout="@layout/fragment_project" >
         <action
-            android:id="@+id/action_projectFragment_to_addExpenseFragment"
-            app:destination="@id/addExpenseFragment" />
+            android:id="@+id/action_projectFragment_to_addTransactionFragment"
+            app:destination="@id/addTransactionFragment" />
         <action
-            android:id="@+id/action_projectFragment_to_settleExpensesFragment"
-            app:destination="@id/settleExpensesFragment" />
+            android:id="@+id/action_projectFragment_to_detailsFragment"
+            app:destination="@id/detailsFragment" />
+        <action
+            android:id="@+id/action_projectFragment_to_summaryFragment"
+            app:destination="@id/summaryFragment" />
     </fragment>
     <fragment
-        android:id="@+id/addExpenseFragment"
-        android:name="io.louisgevers.expensetracker.fragments.AddExpenseFragment"
-        android:label="fragment_add_expense"
-        tools:layout="@layout/fragment_add_expense" >
+        android:id="@+id/addTransactionFragment"
+        android:name="io.louisgevers.expensetracker.fragments.AddTransactionFragment"
+        android:label="fragment_add_transaction"
+        tools:layout="@layout/fragment_add_transaction" />
+    <fragment
+        android:id="@+id/detailsFragment"
+        android:name="io.louisgevers.expensetracker.fragments.DetailsFragment"
+        android:label="fragment_details"
+        tools:layout="@layout/fragment_details" />
+    <fragment
+        android:id="@+id/summaryFragment"
+        android:name="io.louisgevers.expensetracker.fragments.SummaryFragment"
+        android:label="fragment_summary"
+        tools:layout="@layout/fragment_summary" >
         <action
-            android:id="@+id/action_addExpenseFragment_to_projectFragment"
-            app:destination="@id/projectFragment" />
+            android:id="@+id/action_summaryFragment_to_paymentFragment"
+            app:destination="@id/paymentFragment" />
     </fragment>
     <fragment
-        android:id="@+id/settleExpensesFragment"
-        android:name="io.louisgevers.expensetracker.fragments.SettleExpensesFragment"
-        android:label="fragment_settle_expenses"
-        tools:layout="@layout/fragment_settle_expenses" >
-        <action
-            android:id="@+id/action_settleExpensesFragment_to_projectFragment"
-            app:destination="@id/projectFragment" />
-    </fragment>
+        android:id="@+id/paymentFragment"
+        android:name="io.louisgevers.expensetracker.fragments.PaymentFragment"
+        android:label="fragment_payment"
+        tools:layout="@layout/fragment_payment" />
 </navigation>

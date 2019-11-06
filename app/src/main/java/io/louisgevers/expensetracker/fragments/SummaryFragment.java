@@ -17,10 +17,10 @@ import io.louisgevers.expensetracker.R;
 /**
  * A simple {@link Fragment} subclass.
  */
-public class ProjectFragment extends Fragment {
+public class SummaryFragment extends Fragment {
 
 
-    public ProjectFragment() {
+    public SummaryFragment() {
         // Required empty public constructor
     }
 
@@ -29,17 +29,14 @@ public class ProjectFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_project, container, false);
+        return inflater.inflate(R.layout.fragment_summary, container, false);
     }
 
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
-        view.findViewById(R.id.addTransactionButton).setOnClickListener(
-                v -> Navigation.findNavController(view).navigate(R.id.action_projectFragment_to_addTransactionFragment));
-        view.findViewById(R.id.transactionDetailsButton).setOnClickListener(
-                v -> Navigation.findNavController(view).navigate(R.id.action_projectFragment_to_detailsFragment));
-        view.findViewById(R.id.summaryButton).setOnClickListener(
-                v -> Navigation.findNavController(view).navigate(R.id.action_projectFragment_to_summaryFragment));
+        view.findViewById(R.id.paymentButton).setOnClickListener(
+                v -> Navigation.findNavController(v).navigate(R.id.action_summaryFragment_to_paymentFragment)
+        );
     }
 }

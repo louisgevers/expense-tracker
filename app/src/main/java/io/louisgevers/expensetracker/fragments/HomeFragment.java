@@ -6,7 +6,6 @@ import android.os.Bundle;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
-import androidx.navigation.NavDirections;
 import androidx.navigation.Navigation;
 
 import android.view.LayoutInflater;
@@ -19,10 +18,10 @@ import io.louisgevers.expensetracker.R;
 /**
  * A simple {@link Fragment} subclass.
  */
-public class ProjectsOverviewFragment extends Fragment {
+public class HomeFragment extends Fragment {
 
 
-    public ProjectsOverviewFragment() {
+    public HomeFragment() {
         // Required empty public constructor
     }
 
@@ -31,15 +30,15 @@ public class ProjectsOverviewFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_projects_overview, container, false);
+        return inflater.inflate(R.layout.fragment_home, container, false);
     }
 
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
-        Button exampleButton = getActivity().findViewById(R.id.example_button);
-        exampleButton.setOnClickListener((v) -> {
-            Navigation.findNavController(v).navigate(R.id.action_projectsOverviewFragment_to_projectFragment);
-        });
+        view.findViewById(R.id.newProjectButton).setOnClickListener(
+                v -> Navigation.findNavController(view).navigate(R.id.action_navigation_home_to_newProjectFragment));
+        view.findViewById(R.id.existingProjectButton).setOnClickListener(
+                v -> Navigation.findNavController(view).navigate(R.id.action_navigation_home_to_projectFragment));
     }
 }
