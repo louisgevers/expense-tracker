@@ -37,5 +37,7 @@ public class ProjectFragment extends Fragment {
         super.onViewCreated(view, savedInstanceState);
         view.findViewById(R.id.addTransactionButton).setOnClickListener(
                 v -> Navigation.findNavController(view).navigate(R.id.action_projectFragment_to_addTransactionFragment));
+        view.findViewById(R.id.transactionDetailsButton).setOnClickListener(
+                v -> Navigation.findNavController(view).navigate(R.id.action_projectFragment_to_detailsFragment));
     }
 }

@@ -39,10 +39,18 @@
         <action
             android:id="@+id/action_projectFragment_to_addTransactionFragment"
             app:destination="@id/addTransactionFragment" />
+        <action
+            android:id="@+id/action_projectFragment_to_detailsFragment"
+            app:destination="@id/detailsFragment" />
     </fragment>
     <fragment
         android:id="@+id/addTransactionFragment"
         android:name="io.louisgevers.expensetracker.fragments.AddTransactionFragment"
         android:label="fragment_add_transaction"
         tools:layout="@layout/fragment_add_transaction" />
+    <fragment
+        android:id="@+id/detailsFragment"
+        android:name="io.louisgevers.expensetracker.fragments.DetailsFragment"
+        android:label="fragment_details"
+        tools:layout="@layout/fragment_details" />
 </navigation>
