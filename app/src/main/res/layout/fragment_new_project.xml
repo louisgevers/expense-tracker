@@ -31,7 +31,7 @@
     </androidx.appcompat.widget.Toolbar>
 
     <ImageView
-        android:id="@+id/imageView"
+        android:id="@+id/chooseProjectImage"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:src="@drawable/addimage"
@@ -48,7 +48,7 @@
         android:layout_marginTop="16dp"
         android:text="Project"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+        app:layout_constraintTop_toBottomOf="@+id/chooseProjectImage" />
 
     <EditText
         android:id="@+id/projectTitleInput"
