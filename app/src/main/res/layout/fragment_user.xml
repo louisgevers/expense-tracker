@@ -214,7 +214,8 @@
                 android:id="@+id/currencySpinner"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:spinnerMode="dialog" />
+                android:spinnerMode="dropdown"
+                android:entries="@array/currencies"/>
         </TableRow>
 
         <View

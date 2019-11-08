@@ -7,4 +7,10 @@
     <string name="title_home">Home</string>
     <string name="title_search">Search</string>
     <string name="title_user">User</string>
+
+    <string-array name="currencies">
+        <item>EUR</item>
+        <item>USD</item>
+        <item>SGD</item>
+    </string-array>
 </resources>
