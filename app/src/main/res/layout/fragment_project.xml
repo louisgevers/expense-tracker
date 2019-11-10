@@ -206,7 +206,7 @@
             android:id="@+id/textView"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="500dp"
+            android:layout_marginTop="450dp"
             android:text="Total amount: $187"
             android:textAlignment="center"
             android:textColor="#000000"
@@ -216,7 +216,6 @@
         <Button
             android:id="@+id/summaryButton"
             style="@style/Widget.MaterialComponents.Button"
-            android:layout_gravity="bottom"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="50dp"
