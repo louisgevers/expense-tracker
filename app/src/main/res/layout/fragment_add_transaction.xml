@@ -25,6 +25,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="24dp"
         android:text="CANCEL"
+        android:textColor="@android:color/holo_blue_light"
         app:layout_constraintBottom_toBottomOf="@+id/add_transaction_title"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/add_transaction_title" />
@@ -35,6 +36,7 @@
         android:layout_height="wrap_content"
         android:layout_marginEnd="24dp"
         android:text="DONE"
+        android:textColor="@android:color/holo_blue_light"
         app:layout_constraintBottom_toBottomOf="@+id/add_transaction_title"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="@+id/add_transaction_title" />
@@ -43,7 +45,9 @@
         android:id="@+id/add_transaction_table"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:layout_marginStart="24dp"
         android:layout_marginTop="60dp"
+        android:layout_marginEnd="24dp"
         android:divider="@android:color/darker_gray"
         android:showDividers="middle|beginning"
         android:visibility="visible"
@@ -56,25 +60,247 @@
             android:layout_width="fill_parent"
             android:layout_height="1px"
             android:layout_marginBottom="8dp"
-            android:background="@android:color/black"
-            />
-
-        <TableRow
-            android:id="@+id/add_transaction_tablerow1"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent" />
+            android:background="@android:color/black" />
 
         <TableRow
             android:layout_width="match_parent"
-            android:layout_height="match_parent" />
+            android:layout_height="match_parent">
+
+
+            <TextView
+                android:id="@+id/add_transaction_item"
+                android:layout_width="162dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_vertical"
+                android:text="TITLE"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textColor="@android:color/black" />
+
+            <EditText
+                android:id="@+id/add_transaction_inputtitle"
+                android:layout_width="200dp"
+                android:layout_height="match_parent"
+                android:editable="false"
+                android:elegantTextHeight="false"
+                android:hint="Inset Title"
+                android:inputType="text"
+                android:textAlignment="textEnd"
+                android:textColor="@android:color/darker_gray" />
+
+        </TableRow>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1px"
+            android:background="@android:color/black" />
 
         <TableRow
             android:layout_width="match_parent"
-            android:layout_height="match_parent" />
+            android:layout_height="match_parent">
+
+
+            <TextView
+                android:id="@+id/add_transaction_description"
+                android:layout_width="162dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_vertical"
+                android:text="DESCRIPTION"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textColor="@android:color/black" />
+
+            <EditText
+                android:id="@+id/add_transaction_inputdescription"
+                android:layout_width="200dp"
+                android:layout_height="match_parent"
+                android:hint="Inset Description"
+                android:inputType="text"
+                android:textAlignment="textEnd"
+                android:textColor="@android:color/darker_gray" />
+
+        </TableRow>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1px"
+            android:background="@android:color/black" />
 
         <TableRow
             android:layout_width="match_parent"
-            android:layout_height="match_parent" />
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/add_transaction_amount"
+                android:layout_width="162dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_vertical"
+                android:text="AMOUNT"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textColor="@android:color/black" />
+
+            <EditText
+                android:id="@+id/add_transaction_inputamount"
+                android:layout_width="200dp"
+                android:layout_height="match_parent"
+                android:hint="$"
+                android:textAlignment="textEnd"
+                android:textColor="@android:color/darker_gray"
+                android:inputType="number" />
+
+        </TableRow>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1px"
+            android:background="@android:color/black" />
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingTop="15dp"
+            android:paddingBottom="15dp">
+
+            <TextView
+                android:id="@+id/add_transaction_currency"
+                android:layout_width="162dp"
+                android:layout_height="match_parent"
+                android:text="CURRENCY"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textColor="@android:color/black" />
+
+
+            <Spinner
+                android:id="@+id/add_transaction_choosecurrency"
+                android:layout_width="200dp"
+                android:layout_height="match_parent"
+                android:entries="@array/currencies"
+                android:spinnerMode="dropdown"
+                android:textAlignment="textEnd" />
+
+        </TableRow>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1px"
+            android:background="@android:color/black" />
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingTop="15dp"
+            android:paddingBottom="15dp">
+
+            <TextView
+                android:id="@+id/add_transaction_payer"
+                android:layout_width="162dp"
+                android:layout_height="match_parent"
+                android:text="PAYER"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textColor="@android:color/black" />
+
+
+            <Spinner
+                android:id="@+id/add_transaction_choosepayer"
+                android:layout_width="200dp"
+                android:layout_height="match_parent"
+                android:entries="@array/members"
+                android:spinnerMode="dropdown"
+                android:textAlignment="textEnd" />
+
+        </TableRow>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1px"
+            android:background="@android:color/black" />
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingTop="15dp"
+            android:paddingBottom="15dp">
+
+            <TextView
+                android:id="@+id/add_transaction_peyee"
+                android:layout_width="162dp"
+                android:layout_height="match_parent"
+                android:text="FOR"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textColor="@android:color/black" />
+
+
+            <Spinner
+                android:id="@+id/add_transaction_choosepayee"
+                android:layout_width="200dp"
+                android:layout_height="match_parent"
+                android:entries="@array/allmembers"
+                android:spinnerMode="dropdown"
+                android:textAlignment="textEnd" />
+
+        </TableRow>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1px"
+            android:background="@android:color/black" />
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingTop="15dp"
+            android:paddingBottom="15dp">
+
+            <TextView
+                android:id="@+id/add_transaction_location"
+                android:layout_width="162dp"
+                android:layout_height="match_parent"
+                android:text="LOCATION"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textColor="@android:color/black" />
+
+            <TextView
+                android:id="@+id/add_transaction_defaultlocation"
+                android:layout_width="200dp"
+                android:layout_height="match_parent"
+                android:text="Hanoi"
+                android:textAlignment="viewEnd"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textColor="@android:color/holo_blue_light" />
+
+        </TableRow>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1px"
+            android:background="@android:color/black" />
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingTop="15dp"
+            android:paddingBottom="15dp">
+
+            <TextView
+                android:id="@+id/add_transaction_time"
+                android:layout_width="162dp"
+                android:layout_height="match_parent"
+                android:text="TIME"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textColor="@android:color/black" />
+
+            <TextView
+                android:id="@+id/add_transaction_defaulttime"
+                android:layout_width="200dp"
+                android:layout_height="match_parent"
+                android:text="11/10/2019 13:55"
+                android:textAlignment="viewEnd"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textColor="@android:color/holo_blue_light" />
+
+        </TableRow>
+
     </TableLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
