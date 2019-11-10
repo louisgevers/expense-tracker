@@ -5,12 +5,14 @@ import android.os.Bundle;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+import androidx.appcompat.widget.Toolbar;
 import androidx.fragment.app.Fragment;
 import androidx.navigation.Navigation;
 
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Toast;
 
 import io.louisgevers.expensetracker.R;
 
@@ -35,6 +37,9 @@ public class ProjectFragment extends Fragment {
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
+        Toolbar toolbar = view.findViewById(R.id.projectToolbar);
+        toolbar.setNavigationOnClickListener(v ->
+                Navigation.findNavController(view).navigateUp());
         view.findViewById(R.id.addTransactionButton).setOnClickListener(
                 v -> Navigation.findNavController(view).navigate(R.id.action_projectFragment_to_addTransactionFragment));
         view.findViewById(R.id.transactionDetailsButton).setOnClickListener(

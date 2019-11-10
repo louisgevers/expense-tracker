@@ -25,7 +25,14 @@
         android:id="@+id/navigation_search"
         android:name="io.louisgevers.expensetracker.fragments.SearchFragment"
         android:label="fragment_search"
-        tools:layout="@layout/fragment_search" />
+        tools:layout="@layout/fragment_search">
+        <action
+            android:id="@+id/action_searchFragment_to_projectFragment"
+            app:destination="@id/projectFragment" />
+        <action
+            android:id="@+id/action_searchFragment_to_detailsFragment"
+            app:destination="@id/detailsFragment" />
+    </fragment>
     <fragment
         android:id="@+id/newProjectFragment"
         android:name="io.louisgevers.expensetracker.fragments.NewProjectFragment"
@@ -50,7 +57,12 @@
         android:id="@+id/addTransactionFragment"
         android:name="io.louisgevers.expensetracker.fragments.AddTransactionFragment"
         android:label="fragment_add_transaction"
-        tools:layout="@layout/fragment_add_transaction" />
+        tools:layout="@layout/fragment_add_transaction" >
+        <action
+            android:id="@+id/action_addTransactionFragment_to_projectFragment"
+            app:destination="@id/projectFragment" />
+    </fragment>
+
     <fragment
         android:id="@+id/detailsFragment"
         android:name="io.louisgevers.expensetracker.fragments.DetailsFragment"
