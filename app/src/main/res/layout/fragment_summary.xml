@@ -2,6 +2,7 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/divider_2"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".fragments.SummaryFragment"
@@ -9,7 +10,7 @@
     tools:layout_editor_absoluteY="25dp">
 
     <androidx.appcompat.widget.Toolbar
-        android:id="@+id/newProjectToolbar2"
+        android:id="@+id/summaryToolbar2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="?attr/colorPrimary"
@@ -33,57 +34,57 @@
     </androidx.appcompat.widget.Toolbar>
 
     <TextView
-        android:id="@+id/textView3"
+        android:id="@+id/transac_2"
         android:layout_width="119dp"
         android:layout_height="26dp"
         android:layout_marginStart="16dp"
         android:layout_marginEnd="276dp"
         android:text="@string/eva_sung"
         android:textSize="20sp"
-        app:layout_constraintBottom_toBottomOf="@+id/textView10"
+        app:layout_constraintBottom_toBottomOf="@+id/textPrice_2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/textView10" />
+        app:layout_constraintTop_toTopOf="@+id/textPrice_2" />
 
     <TextView
-        android:id="@+id/textView4"
+        android:id="@+id/transac_3"
         android:layout_width="155dp"
         android:layout_height="25dp"
         android:layout_marginStart="16dp"
         android:layout_marginEnd="240dp"
         android:text="@string/sung_dickson"
         android:textSize="20sp"
-        app:layout_constraintBottom_toBottomOf="@+id/textView11"
+        app:layout_constraintBottom_toBottomOf="@+id/textPrice_3"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/textView11" />
+        app:layout_constraintTop_toTopOf="@+id/textPrice_3" />
 
     <TextView
-        android:id="@+id/textView5"
+        android:id="@+id/transac_4"
         android:layout_width="153dp"
         android:layout_height="24dp"
         android:layout_marginStart="16dp"
         android:layout_marginEnd="242dp"
         android:text="@string/dickson_louis"
         android:textSize="20sp"
-        app:layout_constraintBottom_toBottomOf="@+id/textView12"
+        app:layout_constraintBottom_toBottomOf="@+id/textPrice_4"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/textView12" />
+        app:layout_constraintTop_toTopOf="@+id/textPrice_4" />
 
     <TextView
-        android:id="@+id/textView6"
+        android:id="@+id/transac_5"
         android:layout_width="133dp"
         android:layout_height="24dp"
         android:layout_marginStart="16dp"
         android:layout_marginEnd="262dp"
         android:text="@string/sung_louis"
         android:textSize="20sp"
-        app:layout_constraintBottom_toBottomOf="@+id/textView13"
+        app:layout_constraintBottom_toBottomOf="@+id/textPrice_5"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/textView13" />
+        app:layout_constraintTop_toTopOf="@+id/textPrice_5" />
 
     <View
         android:id="@+id/divider2"
@@ -97,7 +98,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <View
-        android:id="@+id/divider1"
+        android:id="@+id/divider_1"
         android:layout_width="fill_parent"
         android:layout_height="1px"
         android:layout_marginBottom="1dp"
@@ -106,7 +107,7 @@
         app:layout_constraintEnd_toEndOf="parent" />
 
     <View
-        android:id="@+id/divider3"
+        android:id="@+id/divider_3"
         android:layout_width="fill_parent"
         android:layout_height="1px"
         android:layout_marginTop="281dp"
@@ -117,7 +118,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <View
-        android:id="@+id/divider4"
+        android:id="@+id/divider_4"
         android:layout_width="fill_parent"
         android:layout_height="1px"
         android:layout_marginTop="350dp"
@@ -128,7 +129,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <View
-        android:id="@+id/divider"
+        android:id="@+id/divider_5"
         android:layout_width="fill_parent"
         android:layout_height="1px"
         android:layout_marginTop="420dp"
@@ -139,7 +140,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <View
-        android:id="@+id/divider6"
+        android:id="@+id/divider_6"
         android:layout_width="fill_parent"
         android:layout_height="1px"
         android:layout_marginTop="491dp"
@@ -150,70 +151,70 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/button6"
+        android:id="@+id/optionButton_3"
         android:layout_width="66dp"
         android:layout_height="45dp"
         android:layout_marginStart="8dp"
         android:layout_marginEnd="8dp"
         android:text="@string/sung"
-        app:layout_constraintBottom_toBottomOf="@+id/divider1"
-        app:layout_constraintEnd_toStartOf="@+id/button5"
-        app:layout_constraintStart_toEndOf="@+id/button3"
-        app:layout_constraintTop_toBottomOf="@+id/newProjectToolbar2"
+        app:layout_constraintBottom_toBottomOf="@+id/divider_1"
+        app:layout_constraintEnd_toStartOf="@+id/optionButton_4"
+        app:layout_constraintStart_toEndOf="@+id/optionButton_2"
+        app:layout_constraintTop_toBottomOf="@+id/summaryToolbar2"
         app:layout_constraintVertical_bias="0.48000002" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/optionButton_1"
         android:layout_width="59dp"
         android:layout_height="44dp"
         android:layout_marginStart="7dp"
         android:layout_marginEnd="7dp"
         android:text="@string/all"
         android:textColor="#03A9F4"
-        app:layout_constraintBottom_toTopOf="@+id/divider1"
-        app:layout_constraintEnd_toStartOf="@+id/button3"
+        app:layout_constraintBottom_toTopOf="@+id/divider_1"
+        app:layout_constraintEnd_toStartOf="@+id/optionButton_2"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/newProjectToolbar2" />
+        app:layout_constraintTop_toBottomOf="@+id/summaryToolbar2" />
 
     <Button
-        android:id="@+id/button3"
+        android:id="@+id/optionButton_2"
         android:layout_width="59dp"
         android:layout_height="44dp"
         android:layout_marginStart="7dp"
         android:layout_marginEnd="7dp"
         android:text="@string/eva"
         android:textColor="#030303"
-        app:layout_constraintBottom_toTopOf="@+id/divider1"
-        app:layout_constraintEnd_toStartOf="@+id/button6"
-        app:layout_constraintStart_toEndOf="@+id/button"
-        app:layout_constraintTop_toBottomOf="@+id/newProjectToolbar2" />
+        app:layout_constraintBottom_toTopOf="@+id/divider_1"
+        app:layout_constraintEnd_toStartOf="@+id/optionButton_3"
+        app:layout_constraintStart_toEndOf="@+id/optionButton_1"
+        app:layout_constraintTop_toBottomOf="@+id/summaryToolbar2" />
 
     <Button
-        android:id="@+id/button4"
+        android:id="@+id/optionButton_5"
         android:layout_width="87dp"
         android:layout_height="45dp"
         android:layout_marginStart="7dp"
         android:layout_marginEnd="7dp"
         android:text="@string/dickson"
-        app:layout_constraintBottom_toTopOf="@+id/divider1"
+        app:layout_constraintBottom_toTopOf="@+id/divider_1"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/button5"
-        app:layout_constraintTop_toBottomOf="@+id/newProjectToolbar2" />
+        app:layout_constraintStart_toEndOf="@+id/optionButton_4"
+        app:layout_constraintTop_toBottomOf="@+id/summaryToolbar2" />
 
     <Button
-        android:id="@+id/button5"
+        android:id="@+id/optionButton_4"
         android:layout_width="79dp"
         android:layout_height="45dp"
         android:layout_marginStart="7dp"
         android:layout_marginEnd="7dp"
         android:text="@string/louis"
-        app:layout_constraintBottom_toTopOf="@+id/divider1"
-        app:layout_constraintEnd_toStartOf="@+id/button4"
-        app:layout_constraintStart_toEndOf="@+id/button6"
-        app:layout_constraintTop_toBottomOf="@+id/newProjectToolbar2" />
+        app:layout_constraintBottom_toTopOf="@+id/divider_1"
+        app:layout_constraintEnd_toStartOf="@+id/optionButton_5"
+        app:layout_constraintStart_toEndOf="@+id/optionButton_3"
+        app:layout_constraintTop_toBottomOf="@+id/summaryToolbar2" />
 
     <Spinner
-        android:id="@+id/spinner"
+        android:id="@+id/currenciesButton"
         android:layout_width="0dp"
         android:layout_height="23dp"
         android:layout_marginStart="120dp"
@@ -228,18 +229,18 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/transac_1"
         android:layout_width="113dp"
         android:layout_height="24dp"
         android:layout_marginStart="16dp"
         android:text="@string/eva_louis"
         android:textSize="20sp"
-        app:layout_constraintBottom_toBottomOf="@+id/textView7"
+        app:layout_constraintBottom_toBottomOf="@+id/textPrice_1"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/textView7" />
+        app:layout_constraintTop_toTopOf="@+id/textPrice_1" />
 
     <TextView
-        android:id="@+id/textView7"
+        android:id="@+id/textPrice_1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="202dp"
@@ -253,52 +254,52 @@
         app:layout_constraintTop_toTopOf="@+id/paymentButton_3" />
 
     <TextView
-        android:id="@+id/textView10"
+        android:id="@+id/textPrice_2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="199dp"
         android:text="@string/_62_00"
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="@+id/paymentButton"
-        app:layout_constraintEnd_toEndOf="@+id/textView7"
+        app:layout_constraintEnd_toEndOf="@+id/textPrice_1"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/paymentButton" />
 
     <TextView
-        android:id="@+id/textView11"
+        android:id="@+id/textPrice_3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="189dp"
         android:text="@string/_205_00"
         android:textSize="20sp"
-        app:layout_constraintEnd_toEndOf="@+id/textView12"
+        app:layout_constraintEnd_toEndOf="@+id/textPrice_4"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/textView15" />
+        app:layout_constraintTop_toTopOf="@+id/textPaid_1" />
 
     <TextView
-        android:id="@+id/textView12"
+        android:id="@+id/textPrice_4"
         android:layout_width="70dp"
         android:layout_height="25dp"
         android:layout_marginStart="201dp"
         android:layout_marginEnd="150dp"
         android:text="@string/_25_00"
         android:textSize="20sp"
-        app:layout_constraintBottom_toBottomOf="@+id/textView16"
+        app:layout_constraintBottom_toBottomOf="@+id/textPaid_2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.8"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/textView16" />
+        app:layout_constraintTop_toTopOf="@+id/textPaid_2" />
 
     <TextView
-        android:id="@+id/textView13"
+        android:id="@+id/textPrice_5"
         android:layout_width="70dp"
         android:layout_height="25dp"
         android:layout_marginStart="201dp"
         android:text="@string/_25_00"
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="@+id/paymentButton_2"
-        app:layout_constraintEnd_toEndOf="@+id/textView12"
+        app:layout_constraintEnd_toEndOf="@+id/textPrice_4"
         app:layout_constraintHorizontal_bias="0.8"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/paymentButton_2" />
@@ -314,7 +315,7 @@
         android:textColor="#0288D1"
         android:textSize="20sp"
         android:visibility="visible"
-        app:layout_constraintBottom_toTopOf="@+id/divider3"
+        app:layout_constraintBottom_toTopOf="@+id/divider_3"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="@+id/paymentButton_3"
         app:layout_constraintTop_toBottomOf="@+id/divider2" />
@@ -330,10 +331,10 @@
         android:textColor="#0288D1"
         android:textSize="20sp"
         android:visibility="visible"
-        app:layout_constraintBottom_toBottomOf="@+id/divider6"
+        app:layout_constraintBottom_toBottomOf="@+id/divider_6"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="@+id/paymentButton"
-        app:layout_constraintTop_toTopOf="@+id/divider" />
+        app:layout_constraintTop_toTopOf="@+id/divider_5" />
 
     <Button
         android:id="@+id/paymentButton_3"
@@ -350,29 +351,29 @@
         android:visibility="visible"
         app:layout_constraintBottom_toBottomOf="@+id/divider2"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/divider1" />
+        app:layout_constraintTop_toTopOf="@+id/divider_1" />
 
     <TextView
-        android:id="@+id/textView15"
+        android:id="@+id/textPaid_1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="45dp"
         android:text="@string/paid"
         android:textSize="20sp"
-        app:layout_constraintBottom_toTopOf="@+id/divider4"
+        app:layout_constraintBottom_toTopOf="@+id/divider_4"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/divider3" />
+        app:layout_constraintTop_toTopOf="@+id/divider_3" />
 
     <TextView
-        android:id="@+id/textView16"
+        android:id="@+id/textPaid_2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="44dp"
         android:text="@string/paid"
         android:textSize="20sp"
-        app:layout_constraintBottom_toTopOf="@+id/divider"
+        app:layout_constraintBottom_toTopOf="@+id/divider_5"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="@+id/textView15"
-        app:layout_constraintTop_toBottomOf="@+id/divider4" />
+        app:layout_constraintStart_toStartOf="@+id/textPaid_1"
+        app:layout_constraintTop_toBottomOf="@+id/divider_4" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

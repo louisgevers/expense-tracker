@@ -36,7 +36,7 @@ public class SummaryFragment extends Fragment {
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
-        Toolbar toolbar = view.findViewById(R.id.newProjectToolbar2);
+        Toolbar toolbar = view.findViewById(R.id.summaryToolbar2);
         toolbar.setNavigationOnClickListener(v ->
                 Navigation.findNavController(view).navigateUp());
 
