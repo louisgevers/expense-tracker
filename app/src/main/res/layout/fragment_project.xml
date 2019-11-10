@@ -38,6 +38,11 @@
         app:layout_constraintTop_toTopOf="@+id/projectToolbar">
 
         <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="70dp" />
+
+        <TableRow
             android:id="@+id/transactionDetailsButton"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
@@ -48,7 +53,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="20dp"
-                android:layout_marginTop="70dp"
+                android:layout_marginTop="0dp"
                 android:layout_weight="1"
                 android:textColor="#000000"
                 android:text="First dinner at Hanoi" />
@@ -57,7 +62,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginEnd="20dp"
-                android:layout_marginTop="70dp"
+                android:layout_marginTop="0dp"
                 android:gravity="right"
                 android:text="$125  >" />
 
