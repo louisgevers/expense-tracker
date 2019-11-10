@@ -6,28 +6,19 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".fragments.DetailsFragment">
 
-    <TextView
-        android:id="@+id/detail_transaction_title"
-        android:layout_width="wrap_content"
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/deatilToolbar"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
-        android:text="TRANSACTION DETAIL"
-        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
-        android:textColor="#000000"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <TextView
-        android:id="@+id/detail_transaction_cancel"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="24dp"
-        android:text="BACK"
-        android:textColor="@android:color/holo_blue_light"
-        app:layout_constraintBottom_toBottomOf="@+id/detail_transaction_title"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/detail_transaction_title" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:navigationIcon="@drawable/ic_arrow_back_black_24dp"
+        app:title="Transaction Detail"
+        />
 
     <TextView
         android:id="@+id/detail_transaction_done"
@@ -35,10 +26,11 @@
         android:layout_height="wrap_content"
         android:layout_marginEnd="24dp"
         android:text="EDIT"
-        android:textColor="@android:color/holo_blue_light"
-        app:layout_constraintBottom_toBottomOf="@+id/detail_transaction_title"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="@+id/deatilToolbar"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/detail_transaction_title" />
+        app:layout_constraintTop_toTopOf="@+id/deatilToolbar" />
 
     <TableLayout
         android:id="@+id/detail_transaction_table"
@@ -320,5 +312,6 @@
         </TableRow>
 
     </TableLayout>
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
