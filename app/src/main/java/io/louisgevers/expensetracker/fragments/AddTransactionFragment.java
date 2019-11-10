@@ -39,6 +39,8 @@ public class AddTransactionFragment extends Fragment {
         Toolbar toolbar = view.findViewById(R.id.add_transaction_Toolbar);
         toolbar.setNavigationOnClickListener(v ->
                 Navigation.findNavController(view).navigateUp());
+        view.findViewById(R.id.add_transaction_Btn).setOnClickListener(
+                v -> Navigation.findNavController(view).navigate(R.id.action_addTransactionFragment_to_projectFragment));
     }
 
 }
