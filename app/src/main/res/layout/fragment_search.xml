@@ -60,7 +60,7 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="20dp"
             android:layout_marginTop="10dp"
-            android:text="Night out"
+            android:text="First dinner at Hanoi"
             android:textColor="#3aa8c1" />
 
         <View
