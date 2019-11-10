@@ -7,6 +7,22 @@
     <string name="title_home">Home</string>
     <string name="title_search">Search</string>
     <string name="title_user">User</string>
+    <string name="all">All</string>
+    <string name="eva">Eva</string>
+    <string name="sung">Sung</string>
+    <string name="louis">Louis</string>
+    <string name="dickson">Dickson</string>
+    <string name="todo">TODO</string>
+    <string name="sung_louis"><![CDATA[Sung --> Louis]]></string>
+    <string name="dickson_louis"><![CDATA[Dickson --> Louis]]></string>
+    <string name="sung_dickson"><![CDATA[Sung --> Dickson]]></string>
+    <string name="eva_sung"><![CDATA[Eva --> Sung]]></string>
+    <string name="eva_louis"><![CDATA[Eva --> Louis]]></string>
+    <string name="_62_00">$62.00</string>
+    <string name="_25_00">$25.00</string>
+    <string name="pay">PAY</string>
+    <string name="paid">PAID</string>
+    <string name="_205_00">$205.00</string>
 
     <string-array name="currencies">
         <item>EUR</item>
